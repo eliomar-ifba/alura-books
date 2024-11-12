@@ -15,22 +15,27 @@
 
 <body>
     <header class="cabecalho">
-        <div class="container">
-            <span class="cabecalho__menuHamburguer container__imagem"></span>
-            <img src="img/Logo.svg" alt="" class="container__imagem">
+        <div class="menu1">
+            <a href="#" class="menu1__menuHamburguer"><img src="img/Menu.svg" class="menu1__imagem"> </a>
+            <img src="img/Logo.svg" alt="" class="menu1__imagem">
+            <h1 class="menu1__titulo"><b class="menu1__titulo--negrito">Alura</b>Books</h1>
         </div>
-        <div class="container">
-            <a href="#"><img src="img/Favoritos.svg" alt="" class="container__imagem"></a>
-            <a href="#"><img src="img/Compras.svg" alt="" class="container__imagem"></a>
-            <a href="#"><img src="img/Usuario.svg" alt="" class="container__imagem"></a>
+        <div class="menu2">
+            <a href="#" class="menu2__item"> CATEGORIAS </a>
+            <a href="#" class="menu2__item"> FAVORITOS </a>
+            <a href="#" class="menu2__item"> MINHA ESTANTE </a>
+        </div>
+        <div class="menu3">
+            <a href="#" class="menu3__imagem--display"><img src="img/Favoritos.svg" alt="" class="menu3__imagem"></a>
+            <a href="#"><img src="img/Compras.svg" alt="" class="menu3__imagem"></a>
+            <a href="#"><img src="img/Usuario.svg" alt="" class="menu3__imagem"></a>
         </div>
     </header>
 
     <section class="banner">
         <h1 class="banner__titulo">Já sabe por onde começar?</h1>
         <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
-        <input type="search" class="banner__pesquisa"
-            placeholder="Qual será sua próxima leitura?">
+        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
 
     <section class="carrossel">
@@ -67,12 +72,12 @@
         </div>
         <article class="carrosel__card">
             <div class="carrossel__cardContainer">
-                <h3 class="carrosel__cardTitulo" >Talvez você também se interesse por...</h3>
+                <h3 class="carrosel__cardTitulo">Talvez você também se interesse por...</h3>
                 <h3 class="carrosel__cardSubTitulo">Angular 11 e Firebase</h3>
                 <p class="carrosel__cardTexto">Construindo uma aplicação integrada com a plataforma do Google.</p>
                 <div class="carrosel__cardIcones">
-                    <a href="#"><img src="img/Favoritos.svg" alt="" ></a>
-                    <a href="#"><img src="img/Compras.svg" alt="" ></a>
+                    <a href="#"><img src="img/Favoritos.svg" alt=""></a>
+                    <a href="#"><img src="img/Compras.svg" alt=""></a>
                 </div>
             </div>
             <div class="carrossel__cardContainer cardContainer--2">
@@ -96,9 +101,11 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide"><img src="img/Lideranca.svg" alt="Livro sobre liderança em design da alura books"></div>                    
+                    <div class="swiper-slide"><img src="img/Lideranca.svg"
+                            alt="Livro sobre liderança em design da alura books"></div>
                     <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia front end"></div>
-                    <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                    <div class="swiper-slide"><img src="img/ApacheKafka.svg"
+                            alt="Livro sobre apache kafka e spring boot da alura books"></div>
                     <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro  sobre portugol"></div>
                     <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro sobre acessibilidade"></div>
                     ...
@@ -115,15 +122,16 @@
         </div>
         <article class="carrosel__card">
             <div class="carrossel__cardContainer">
-                <h3 class="carrosel__cardTitulo" >
+                <h3 class="carrosel__cardTitulo">
                     <img src="img/Estrelinhas.svg" alt="">
-                    <p>Autora do Mês</p> 
+                    <p>Autora do Mês</p>
                 </h3>
                 <h3 class="carrosel__cardSubTitulo">Juliana Agarikov</h3>
-                <p class="carrosel__cardTexto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+                <p class="carrosel__cardTexto">Analista de sistemas e escritora, Juliana é especialista em Front-End.
+                </p>
                 <div class="carrosel__cardIcones">
-                    <a href="#"><img src="img/Favoritos.svg" alt="" ></a>
-                    <a href="#"><img src="img/Compras.svg" alt="" ></a>
+                    <a href="#"><img src="img/Favoritos.svg" alt=""></a>
+                    <a href="#"><img src="img/Compras.svg" alt=""></a>
                 </div>
             </div>
             <div class="carrossel__cardContainer cardContainer--2">
@@ -153,7 +161,7 @@
     <section class="contato">
         <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
         <h3 class="contato__subTitulo">Atualizações de e-books, novos livros, promoções e outros.</h3>
-        <input type="email" class="contato__email" placeholder="Cadastre seu e-mail" >
+        <input type="email" class="contato__email" placeholder="Cadastre seu e-mail">
     </section>
 
     <footer class="rodape">

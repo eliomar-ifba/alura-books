@@ -3,24 +3,81 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 18px 24px;
 }
-.container {
+
+.menu1,
+.menu2,
+.menu3 {
   display: flex;
   align-items: center;
 }
 
-.container__imagem {
-  padding: 1em;
+.menu1{
+  gap: 24px;
+}
+.menu3{
+  gap: 24px;
 }
 
-.cabecalho__menuHamburguer {
-  background-image: url(../img/Menu.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 24px;
-  height: 24px;
-  display: inline-block;
+.menu1__imagem,
+.menu3__imagem {
+  /* padding: 1em; */
 }
 
+.menu1__menuHamburguer {
+}
 
+.menu1__titulo {
+  display: none;
+  color: #000;
+  font-family: var(--font2);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
+.menu1__titulo--negrito {
+  font-weight: 700;
+}
+
+.menu2 {
+  display: none;
+}
+
+.menu2__item {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media screen and (width >= 1024px) {
+  .cabecalho {
+    padding: 18px 80px;
+  }
+  .menu1__titulo {
+    display: block;
+  }
+  .menu1__menuHamburguer {
+    display: none;
+  }
+  
+  .menu1 {
+    gap: 10px;
+    align-items: end;
+  }
+  .menu2 {
+    display: flex;
+    gap: 42px;
+  }
+  .menu3 {
+    gap: 60px;
+  }
+  .menu3__imagem--display {
+    display: none;
+  }
+
+}
