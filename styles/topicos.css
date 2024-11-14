@@ -38,3 +38,19 @@
   font-weight: 700;
   line-height: normal;
 }
+
+@media (width >= 1024px) {
+  .topicos {
+    padding: 24px 120px;
+  }
+  .topicos__grid {
+    gap: 24px;
+  }
+  .topicos__titulo {
+    font-size: 24px;
+  }
+  .topicos__link {
+    font-size: 24px;
+    padding: 24px 32px;
+  }
+}
