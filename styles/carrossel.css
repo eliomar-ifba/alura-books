@@ -106,8 +106,11 @@
 }
 
 @media (width >= 1024px) {
-  .carrossel {
-    /* gap: 25px; */
+  .carrossel__container-livros-card {
+    /* padding: 60px 174px; */
+    /* gap: 10px; */
+    align-items: center;
+    justify-content: center;
   }
   .carrossel__titulo {
     font-size: 26px;
@@ -132,11 +135,9 @@
     flex-direction: row;
     padding: 60px 174px;
     gap: 40px;
-    align-items: center;
   }
   .carrossel__titulo {
     font-size: 32px;
-    padding: 2.5em 0 0.8em 0;
   }
 
   .carrossel__livros {

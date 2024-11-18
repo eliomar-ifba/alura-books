@@ -14,14 +14,29 @@
 </head>
 
 <body>
-    <header class="cabecalho">
+    <header id="cabecalho">
         <div class="menu1">
-            <a href="#" class="menu1__menuHamburguer"><img src="img/Menu.svg" class="menu1__imagem"> </a>
-            <img src="img/Logo.svg" alt="" class="menu1__imagem">
+            <img src="img/Menu.svg" id="menu1__imagemMenu">
+            <img src="img/Logo.svg" alt="" id="menu1__imagemLogo">
             <h1 class="menu1__titulo"><b class="menu1__titulo--negrito">Alura</b>Books</h1>
         </div>
+        <ul id="menu-lista">
+            <li class="menu-listaItem--lowercase">Categorias</li>
+            <li>Programação</li>
+            <li>Front-end</li>
+            <li>Infraestrutura</li>
+            <li>Business</li>
+            <li>Design & UX</li>
+        </ul>
         <div class="menu2">
-            <a href="#" class="menu2__item"> CATEGORIAS </a>
+            <a href="#" class="menu2__item" id="menu2__itemCategoria"> CATEGORIAS </a>
+            <ul id="menu-lista2">
+                <li>Programação</li>
+                <li>Front-end</li>
+                <li>Infraestrutura</li>
+                <li>Business</li>
+                <li>Design & UX</li>
+            </ul>
             <a href="#" class="menu2__item"> FAVORITOS </a>
             <a href="#" class="menu2__item"> MINHA ESTANTE </a>
         </div>
@@ -35,7 +50,10 @@
     <section class="banner">
         <h1 class="banner__titulo">Já sabe por onde começar?</h1>
         <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
-        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+        <div class="banner__containerPesquisa">
+            <input type="search" class="banner__inputPesquisa" placeholder="Qual será sua próxima leitura?">
+            <img class="banner__iconePesquisa" src="img/Lupa.svg" alt="">
+        </div>
     </section>
 
     <section class="carrossel">
@@ -74,7 +92,7 @@
             </div>
             <article class="carrosel__card">
                 <div class="carrossel__cardContainer">
-                    <h3 class="carrosel__cardTitulo">Talvez você também se interesse por...</h3>
+                    <h3 class="carrosel__cardTitulo">Talvez você tambem se interesse por...</h3>
                     <h3 class="carrosel__cardSubTitulo">Angular 11 e Firebase</h3>
                     <p class="carrosel__cardTexto">Construindo uma aplicação integrada com a plataforma do Google.</p>
                     <div class="carrosel__cardIcones">
@@ -133,7 +151,7 @@
                         <p>Autora do Mês</p>
                     </h3>
                     <h3 class="carrosel__cardSubTitulo">Juliana Agarikov</h3>
-                    <p class="carrosel__cardTexto">Analista de sistemas e escritora, Juliana é especialista em
+                    <p class="carrosel__cardTexto">Analista de sistemas e escritora, Juliana e especialista em
                         Front-End.
                     </p>
                     <div class="carrosel__cardIcones">
@@ -172,124 +190,128 @@
             <h3 class="contato__subTitulo">Atualizações de e-books, novos livros, promoções e outros.</h3>
         </div>
         <div class="contato__container-email">
-            <img class="contato__icone" src="../img/Email.svg" alt="">
             <input type="email" class="contato__email" placeholder="Cadastre seu e-mail">
+            <img class="contato__icone" src="../img/Email.svg" alt="">
         </div>
     </section>
 
-    <footer class="rodapé">
-        <h2 class="rodapé__titulo">Grupo Alura</h2>
-        <ul class="lista-rodapé">
-            <li class="lista-rodapé__titulo">Educação</li>
-            <li class="lista-rodapé__item">
+    <hr>
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Grupo Alura</h2>
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Educação</li>
+            <li class="lista-rodape__item">
                 <img src="img/CasaDoCodigo.svg" alt="Logo da casa do código">
-                <a href="#" class="lista-rodapé__link">Casa do código</a>
+                <a href="#" class="lista-rodape__link">Casa do código</a>
             </li>
-            <li class="lista-rodapé__item">
+            <li class="lista-rodape__item">
                 <img src="img/Caelum.svg" alt="Logo da caelum">
-                <a href="#" class="lista-rodapé__link">Caelum</a>
+                <a href="#" class="lista-rodape__link">Caelum</a>
             </li>
         </ul>
 
-        <ul class="lista-rodapé">
-            <li class="lista-rodapé__titulo">Educação online</li>
-            <li class="lista-rodapé__item">
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Educação online</li>
+            <li class="lista-rodape__item">
                 <img src="img/Alura.svg" alt="Logo da Alura">
-                <a href="#" class="lista-rodapé__link">Alura</a>
+                <a href="#" class="lista-rodape__link">Alura</a>
             </li>
-            <li class="lista-rodapé__item">
+            <li class="lista-rodape__item">
                 <img src="img/AluraEmpresas.svg" alt="Logo da Alura para Empresas">
-                <a href="#" class="lista-rodapé__link">Alura para Empresas</a>
+                <a href="#" class="lista-rodape__link">Alura para Empresas</a>
             </li>
-            <li class="lista-rodapé__item">
+            <li class="lista-rodape__item">
                 <img src="img/AluraLATAM.svg" alt="Logo da Alura Latam">
-                <a href="#" class="lista-rodapé__link">Alura LATAM</a>
+                <a href="#" class="lista-rodape__link">Alura LATAM</a>
             </li>
-            <li class="lista-rodapé__item">
+            <li class="lista-rodape__item">
                 <img src="img/AluraStart.svg" alt="Logo da Alura START">
-                <a href="#" class="lista-rodapé__link">Alura Start</a>
+                <a href="#" class="lista-rodape__link">Alura Start</a>
             </li>
-            <li class="lista-rodapé__item">
+            <li class="lista-rodape__item">
                 <img src="img/MusicDot.svg" alt="Logo da Music Dot">
-                <a href="#" class="lista-rodapé__link">Music Dot</a>
+                <a href="#" class="lista-rodape__link">Music Dot</a>
             </li>
-            <li class="lista-rodapé__item">
+            <li class="lista-rodape__item">
                 <img src="img/AluraLingua.svg" alt="Logo da Alura Lingua">
-                <a href="#" class="lista-rodapé__link">Alura Lingua</a>
+                <a href="#" class="lista-rodape__link">Alura Lingua</a>
             </li>
-            <li class="lista-rodapé__item">
+            <li class="lista-rodape__item">
                 <img src="img/PM3.svg" alt="Logo da PM3">
-                <a href="#" class="lista-rodapé__link">PM3</a>
+                <a href="#" class="lista-rodape__link">PM3</a>
             </li>
         </ul>
 
-        <ul class="lista-rodapé">
-            <li class="lista-rodapé__titulo">Comunidade</li>
-            <li class="lista-rodapé__item">
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Comunidade</li>
+            <li class="lista-rodape__item">
                 <img src="img/HipstersTech.svg" alt="Logo do Hipsters ponto Tech">
-                <a href="#" class="lista-rodapé__link">Hipsters ponto Tech</a>
+                <a href="#" class="lista-rodape__link">Hipsters ponto Tech</a>
             </li>
-            <li class="lista-rodapé__item">
+            <li class="lista-rodape__item">
                 <img src="img/ScubaDev.svg" alt="Logo do Scuba Dev">
-                <a href="#" class="lista-rodapé__link">Scuba Dev</a>
+                <a href="#" class="lista-rodape__link">Scuba Dev</a>
             </li>
-            <li class="lista-rodapé__item">
+            <li class="lista-rodape__item">
                 <img src="img/LayersTech.svg" alt="Logo do Layers ponto Tech">
-                <a href="#" class="lista-rodapé__link">Layers ponto Tech</a>
+                <a href="#" class="lista-rodape__link">Layers ponto Tech</a>
             </li>
-            <li class="lista-rodapé__item">
+            <li class="lista-rodape__item">
                 <img src="img/LikeABoss.svg" alt="Logo do Like a Boss">
-                <a href="#" class="lista-rodapé__link">Like a Boss</a>
+                <a href="#" class="lista-rodape__link">Like a Boss</a>
             </li>
-            <li class="lista-rodapé__item">
+            <li class="lista-rodape__item">
                 <img src="img/CarreiraSemFronteira.svg" alt="Logo do Carreira sem fronteiras">
-                <a href="#" class="lista-rodapé__link">Carreira sem fronteiras</a>
+                <a href="#" class="lista-rodape__link">Carreira sem fronteiras</a>
             </li>
-            <li class="lista-rodapé__item">
+            <li class="lista-rodape__item">
                 <img src="img/HipstersJobs.svg" alt="Logo do Hipsters ponto jobs">
-                <a href="#" class="lista-rodapé__link">Hipsters ponto jobs</a>
+                <a href="#" class="lista-rodape__link">Hipsters ponto jobs</a>
             </li>
-            <li class="lista-rodapé__item">
+            <li class="lista-rodape__item">
                 <img src="img/GUJ.svg" alt="Logo do GUJ">
-                <a href="#" class="lista-rodapé__link">GUJ</a>
+                <a href="#" class="lista-rodape__link">GUJ</a>
             </li>
         </ul>
     </footer>
 
-</body>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-    const swiper = new Swiper('.swiper', {
-        loop: true,
-        slidesPerView: "auto",
-        spaceBetween: 10,
-        centeredSlides: true,
 
-        // autoplay: {
-        //     delay: 2000,
-        // },
+    <!-- SCRIPTS -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            slidesPerView: "auto",
+            spaceBetween: 10,
+            centeredSlides: true,
 
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
+            // autoplay: {
+            //     delay: 2000,
+            // },
 
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-        },
-
-        on: {
-            init: function () {
-
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
-        },
 
-    });
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
 
-    // swiper.slideTo(1, 100, false);
-</script>
+            on: {
+                init: function () {
+
+                },
+            },
+
+        });
+
+        // swiper.slideTo(1, 100, false);
+    </script>
+</body>
 
 </html>

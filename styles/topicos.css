@@ -41,13 +41,29 @@
 
 @media (width >= 1024px) {
   .topicos {
-    padding: 24px 120px;
+    padding: 32px 140px;
   }
   .topicos__grid {
     gap: 24px;
   }
   .topicos__titulo {
     font-size: 24px;
+  }
+  .topicos__link {
+    font-size: 24px;
+    padding: 24px 32px;
+  }
+}
+
+@media (width >= 1728px) {
+  .topicos {
+    padding: 70px 492px;
+  }
+  .topicos__grid {
+    gap: 24px;
+  }
+  .topicos__titulo {
+    font-size: 32px;
   }
   .topicos__link {
     font-size: 24px;
