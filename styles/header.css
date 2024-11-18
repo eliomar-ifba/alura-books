@@ -129,7 +129,8 @@
     position: absolute;
   }
 
-  #menu-lista2.active {
+  #menu2__itemCategoria:hover + #menu-lista2,
+  #menu-lista2:hover {
     height: 288px;
     overflow-y: auto;
   }
